@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+
+<head>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="home.css">
+
+    <style>
+        h1 {
+            color: #0b0b0bfc;
+        }
+
+        body,
+        html {
+            height: 100%
+        }
+
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Amatic SC", sans-serif
+        }
+
+        .menu {
+            display: none
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="w3-top">
+        <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+            <a href="home.html" class="w3-bar-item w3-button">HOME</a>
+            <a href="store.html" class="w3-bar-item w3-button">STORE</a>
+            <a href="shoppingcart.html" class="w3-bar-item w3-button">SHOPPINGCART</a>
+        </div>
+    </div>
+    <div class="w3-container w3-white w3-padding-64 w3-xxlarge" id="menu">
+        <div class="w3-content">
+            <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">好吃鮮果</h1>
+            <div class="w3-row w3-center w3-border w3-border-dark-grey">
+                <a href="javascript:void(0)" onclick="openMenu(event, '單點');" id="myLink">
+                    <div class="w3-col s4 tablink w3-padding-large w3-hover-red">單點</div>
+                </a>
+                <a href="javascript:void(0)" onclick="openMenu(event, '綜合');">
+                    <div class="w3-col s4 tablink w3-padding-large w3-hover-red">綜合</div>
+                </a>
+                <a href="javascript:void(0)" onclick="openMenu(event, '季節限定');">
+                    <div class="w3-col s4 tablink w3-padding-large w3-hover-red">季節限定</div>
+                </a>
+            </div>
+            <div id="單點" class="w3-container menu w3-padding-32 w3-white">
+                <h1><span class="w3-right w3-tag w3-dark-grey w3-round">$35</span></h1>
+                <button id="show00" onclick="handleClick(this.id)">番茄</button>
+                <dialog id="infoshow00">
+                    <p>番茄份數</p>
+                    <select id="theList size=6">
+                        <option value=1>1
+                        <option value=2>2
+                        <option value=3>3
+                        <option value=4>4
+                        <option value=5>5
+                    </select>
+                    <br />
+                    <button class="yes" onclick="check()">確定</button>
+                    <button class="close" onclick="close_dialog()">close</button>
+                </dialog>
+                <hr>
+
+                <h1> <span class="w3-right w3-tag w3-dark-grey w3-round">$35</span></h1>
+                <button id="show01" onclick="handleClick(this.id)">芭樂</button>
+                <dialog id="infoshow01">
+                    <p>芭樂份數</p>
+                    <select id="theList size=6">
+                        <option value=1>1
+                        <option value=2>2
+                        <option value=3>3
+                        <option value=4>4
+                        <option value=5>5
+                    </select>
+                    <br />
+                    <button class="yes" onclick="check()">確定</button>
+                    <button class="close" onclick="close_dialog()">close</button>
+                </dialog>
+                <hr>
+
+                <h1> <span class="w3-right w3-tag w3-dark-grey w3-round">$35</span></h1>
+                <button id="show001" onclick="handleClick(this.id)">鳳梨</button>
+                <dialog id="infoshow001">
+                    <p>鳳梨份數</p>
+                    <select id="theList size=6">
+                        <option value=1>1
+                        <option value=2>2
+                        <option value=3>3
+                        <option value=4>4
+                        <option value=5>5
+                    </select>
+                    <br />
+                    <button class="yes" onclick="check()">確定</button>
+                    <button class="close" onclick="close_dialog()">close</button>
+                </dialog>
+                <hr>
+
+                <h1> <span class="w3-right w3-tag w3-dark-grey w3-round">$35</span></h1>
+                <button id="show002" onclick="handleClick(this.id)">哈密瓜</button>
+                <dialog id="infoshow002">
+                    <p>哈密瓜份數</p>
+                    <select id="theList size=6">
+                        <option value=1>1
+                        <option value=2>2
+                        <option value=3>3
+                        <option value=4>4
+                        <option value=5>5
+                    </select>
+                    <br />
+                    <button class="yes" onclick="check()">確定</button>
+                    <button class="close" onclick="close_dialog()">close</button>
+                </dialog>
+                <hr>
+
+                <h1> <span class="w3-right w3-tag w3-dark-grey w3-round">$35</span></h1>
+                <button id="show003" onclick="handleClick(this.id)">香瓜</button>
+                <dialog id="infoshow003">
+                    <p>香瓜份數</p>
+                    <select id="theList size=6">
+                        <option value=1>1
+                        <option value=2>2
+                        <option value=3>3
+                        <option value=4>4
+                        <option value=5>5
+                    </select>
+                    <br />
+                    <button class="yes" onclick="check()">確定</button>
+                    <button class="close" onclick="close_dialog()">close</button>
+                </dialog>
+                <hr>
+
+                <h1> <span class="w3-right w3-tag w3-dark-grey w3-round">$35</span></h1>
+                <button id="show004" onclick="handleClick(this.id)">番茄蜜餞</button>
+                <dialog id="infoshow004">
+                    <p>番茄蜜餞份數</p>
+                    <select id="theList size=6">
+                        <option value=1>1
+                        <option value=2>2
+                        <option value=3>3
+                        <option value=4>4
+                        <option value=5>5
+                    </select>
+                    <br />
+                    <button class="yes" onclick="check()">確定</button>
+                    <button class="close" onclick="close_dialog()">close</button>
+                </dialog>
+                <hr>
+            </div>
+            <!--  -->
+            <div id="綜合" class="w3-container menu w3-padding-32 w3-white">
+                <h1> <span class="w3-right w3-tag w3-dark-grey w3-round">$50</span></h1>
+                <button id="show005" onclick="handleClick(this.id)">橘子、葡萄、哈密瓜</button>
+                <dialog id="infoshow005">
+                    <p>橘子、葡萄、哈密瓜 份數</p>
+                    <select id="theList size=6">
+                        <option value=1>1
+                        <option value=2>2
+                        <option value=3>3
+                        <option value=4>4
+                        <option value=5>5
+                    </select>
+                    <br />
+                    <button class="yes" onclick="check()">確定</button>
+                    <button class="close" onclick="close_dialog()">close</button>
+                </dialog>
+                <hr>
+
+                <h1> <span class="w3-right w3-tag w3-dark-grey w3-round">$50</span></h1>
+                <button id="show006" onclick="handleClick(this.id)">香瓜、鳳梨、芭樂</button>
+                <dialog id="infoshow006">
+                    <p>香瓜、鳳梨、芭樂 份數</p>
+                    <select id="theList size=6">
+                        <option value=1>1
+                        <option value=2>2
+                        <option value=3>3
+                        <option value=4>4
+                        <option value=5>5
+                    </select>
+                    <br />
+                    <button class="yes" onclick="check()">確定</button>
+                    <button class="close" onclick="close_dialog()">close</button>
+                </dialog>
+                <hr>
+
+                <h1> <span class="w3-right w3-tag w3-dark-grey w3-round">$50</span></h1>
+                <button id="show007" onclick="handleClick(this.id)">芒果、奇異果、葡萄</button>
+                <dialog id="infoshow007">
+                    <p>芒果、奇異果、葡萄 份數</p>
+                    <select id="theList size=6">
+                        <option value=1>1
+                        <option value=2>2
+                        <option value=3>3
+                        <option value=4>4
+                        <option value=5>5
+                    </select>
+                    <br />
+                    <button class="yes" onclick="check()">確定</button>
+                    <button class="close" onclick="close_dialog()">close</button>
+                </dialog>
+            </div>
+            <!--  -->
+            <div id="季節限定" class="w3-container menu w3-padding-32 w3-white">
+                <h1> <span class="w3-right w3-tag w3-dark-grey w3-round">$35</span></h1>
+                <button id="show008" onclick="handleClick(this.id)">芒果</button>
+                <dialog id="infoshow008">
+                    <p>芒果份數</p>
+                    <select id="theList size=6">
+                        <option value=1>1
+                        <option value=2>2
+                        <option value=3>3
+                        <option value=4>4
+                        <option value=5>5
+                    </select>
+                    <br />
+                    <button class="yes" onclick="check()">確定</button>
+                    <button class="close" onclick="close_dialog()">close</button>
+                </dialog>
+                <hr>
+
+                <h1> <span class="w3-right w3-tag w3-dark-grey w3-round">$35</span></h1>
+                <button id="show009" onclick="handleClick(this.id)">奇異果</button>
+                <dialog id="infoshow009">
+                    <p>奇異果份數</p>
+                    <select id="theList size=6">
+                        <option value=1>1
+                        <option value=2>2
+                        <option value=3>3
+                        <option value=4>4
+                        <option value=5>5
+                    </select>
+                    <br />
+                    <button class="yes" onclick="check()">確定</button>
+                    <button class="close" onclick="close_dialog()">close</button>
+                </dialog>
+                <hr>
+
+                <h1> <span class="w3-right w3-tag w3-dark-grey w3-round">$35</span></h1>
+                <button id="show010" onclick="handleClick(this.id)">橘子</button>
+                <dialog id="infoshow010">
+                    <p>橘子份數</p>
+                    <select id="theList size=6">
+                        <option value=1>1
+                        <option value=2>2
+                        <option value=3>3
+                        <option value=4>4
+                        <option value=5>5
+                    </select>
+                    <br />
+                    <button class="yes" onclick="check()">確定</button>
+                    <button class="close" onclick="close_dialog()">close</button>
+                </dialog>
+                <hr>
+            </div><br>
+
+            <script>
+                // Tabbed Menu
+                function openMenu(evt, menuName) {
+                    var i, x, tablinks;
+                    x = document.getElementsByClassName("menu");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    tablinks = document.getElementsByClassName("tablink");
+                    for (i = 0; i < x.length; i++) {
+                        tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+                    }
+                    document.getElementById(menuName).style.display = "block";
+                    evt.currentTarget.firstElementChild.className += " w3-red";
+                }
+                document.getElementById("myLink").click();
+            </script>
+
+        </div>
+
+        <div class="w3-container w3-white w3-padding-64 w3-xxlarge" id="menu">
+            <div class="w3-content">
+                <a href="store.html">回上一頁</a>
+            </div>
+        </div>
+    </div>
+    <script src="./morninghill.js"></script>
+</body>
+
+</html>

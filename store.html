@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+
+<head>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="home.css">
+    <style>
+        h1 {
+          color: #0b0b0bfc;
+        }
+    
+        body,
+        html {
+          height: 100%
+        }
+    
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+          font-family: "Amatic SC", sans-serif
+        }
+    
+        .menu {
+          display: none
+        }
+    
+      </style>
+
+
+</head>
+
+
+
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+    <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+        <a href="home.html" class="w3-bar-item w3-button">HOME</a>
+        <a href="store.html" class="w3-bar-item w3-button">STORE</a>
+        <a href="shoppingcart.html" class="w3-bar-item w3-button">SHOPPINGCART</a>
+    </div>
+  </div>
+
+    <div class="w3-container w3-white w3-padding-64 w3-xxlarge" id="menu">
+        <div class="w3-content">
+
+
+            <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">店家</h1>
+
+
+            <div class="w3-row w3-center w3-border w3-border-dark-grey">
+                <a href="javascript:void(0)" onclick="openMenu(event, '靜園');" id="myLink">
+                    <div class="w3-col s4 tablink w3-padding-large w3-hover-red">靜園</div>
+                </a>
+                <a href="javascript:void(0)" onclick="openMenu(event, '宜園');">
+                    <div class="w3-col s4 tablink w3-padding-large w3-hover-red">宜園</div>
+                </a>
+                <a href="javascript:void(0)" onclick="openMenu(event, '至善');">
+                    <div class="w3-col s4 tablink w3-padding-large w3-hover-red">至善</div>
+                </a>
+            </div>
+
+
+            <div id="靜園" class="w3-container menu w3-padding-32 w3-white">
+
+                <a href="curry.html">極咖哩</a>
+                <hr>
+
+            </div>
+
+
+            <div id="宜園" class="w3-container menu w3-padding-32 w3-white">
+
+                <a href="morninghill.html">早安山丘</a>
+                <hr>
+
+            </div>
+
+
+            <div id="至善" class="w3-container menu w3-padding-32 w3-white">
+
+                <a href="fruit.html">好吃鮮果</a>
+                <hr>
+
+            </div><br>
+
+            <script>
+                // Tabbed Menu
+                function openMenu(evt, menuName) {
+                    var i, x, tablinks;
+                    x = document.getElementsByClassName("menu");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    tablinks = document.getElementsByClassName("tablink");
+                    for (i = 0; i < x.length; i++) {
+                        tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+                    }
+                    document.getElementById(menuName).style.display = "block";
+                    evt.currentTarget.firstElementChild.className += " w3-red";
+                }
+                document.getElementById("myLink").click();
+            </script>
+
+
+        </div>
+
+        <div class="w3-container w3-white w3-padding-64 w3-xxlarge" id="menu">
+            <div class="w3-content">
+                <a href="home.html">回上一頁</a>
+            </div>
+
+</body>
+
+</html>

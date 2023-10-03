@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+
+    <title>ShoppingCart</title>
+    <style>
+        body{
+            font-family: "Amatic SC", sans-serif
+        }
+    </style>
+</head>
+
+<body>
+    <div class="w3-top w3-hide-small">
+        <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+          <a href="home.html" class="w3-bar-item w3-button">HOME</a>
+          <a href="store.html" class="w3-bar-item w3-button">STORE</a>
+          <a href="shoppingcart.html" class="w3-bar-item w3-button">SHOPPINGCART</a>
+        </div>
+      </div>
+    <div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
+        <div class="w3-content">
+          <h1 class="w3-center w3-jumbo" style="margin-bottom:64px" >購物車</h1>
+          <!-- <p>Find us at some address at some place or call us at 05050515-122330</p> -->
+          <!-- <p><span class="w3-tag">FYI!</span> We offer full-service catering for any event, large or small. We understand
+            your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+          <p class="w3-xxlarge"><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p> -->
+          <form action="/action_page.php" target="_blank">
+            <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="選擇地點" required name="Name"></p>
+            <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="選擇餐點" required name="Name"></p>
+            <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="選擇數量" required
+                name="People"></p>
+            <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required
+                name="date" value="2020-11-16T20:00"></p>
+            <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="手機號碼"
+                required name="Message"></p>
+            <p><button class="w3-button w3-light-grey w3-block" type="submit">送出訂單</button></p>
+          </form>
+        </div>
+      </div>
+    
+</body>
+</html>

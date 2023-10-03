@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+
+<head>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="home.css">
+
+    <style>
+        h1 {
+            color: #0b0b0bfc;
+        }
+
+        body,
+        html {
+            height: 100%
+        }
+
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Amatic SC", sans-serif
+        }
+
+        .menu {
+            display: none
+        }
+    </style>
+
+</head>
+
+
+
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+            <a href="home.html" class="w3-bar-item w3-button">HOME</a>
+            <a href="store.html" class="w3-bar-item w3-button">STORE</a>
+            <a href="shoppingcart.html" class="w3-bar-item w3-button">SHOPPINGCART</a>
+        </div>
+    </div>
+
+    <div class="w3-container w3-white w3-padding-64 w3-xxlarge" id="menu">
+        <div class="w3-content">
+
+
+            <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">早安山丘</h1>
+
+
+            <div class="w3-row w3-center w3-border w3-border-dark-grey">
+                <a href="javascript:void(0)" onclick="openMenu(event, '蛋餅');" id="myLink">
+                    <div class="w3-col s4 tablink w3-padding-large w3-hover-red">蛋餅</div>
+                </a>
+                <a href="javascript:void(0)" onclick="openMenu(event, '漢堡');">
+                    <div class="w3-col s4 tablink w3-padding-large w3-hover-red">漢堡</div>
+                </a>
+                <a href="javascript:void(0)" onclick="openMenu(event, '飲料');">
+                    <div class="w3-col s4 tablink w3-padding-large w3-hover-red">飲料</div>
+                </a>
+            </div>
+
+            <!-- 蛋餅 -->
+            <div id="蛋餅" class="w3-container menu w3-padding-32 w3-white">
+                <h1><span class="w3-right w3-tag w3-dark-grey w3-round">$30</span></h1>
+                <button id="show1" onclick="handleClick(this.id)">玉米</button>
+                <dialog id="infoshow1">
+                    <p>玉米蛋餅份數</p>
+                    <select id="theList size=6">
+                        <option value=1>1
+                        <option value=2>2
+                        <option value=3>3
+                        <option value=4>4
+                        <option value=5>5
+                    </select>
+                    <br />
+                    <button class="yes" onclick="check()">確定</button>
+                    <button class="close" onclick="close_dialog()">close</button>
+                </dialog>
+                <hr>
+
+                <h1> <span class="w3-right w3-tag w3-dark-grey w3-round">$25</span></h1>
+                <button id="show2" onclick="handleClick(this.id)">原味</button>
+                <dialog id="infoshow2">
+                    <p>原味蛋餅份數</p><select id="theList size=6">
+                        <option value=1>1
+                        <option value=2>2
+                        <option value=3>3
+                        <option value=4>4
+                        <option value=5>5
+                    </select>
+                    <br />
+                    <button class="yes" onclick="check()">確定</button>
+                    <button class="close" onclick="close_dialog()">close</button>
+                </dialog>
+                <hr>
+
+                <h1> <span class="w3-right w3-tag w3-dark-grey w3-round">$30</span></h1>
+                <button id="show3" onclick="handleClick(this.id)">肉鬆</button>
+                <dialog id="infoshow3">
+                    <p>肉鬆蛋餅份數</p>
+                    <select id="theList size=6">
+                        <option value=1>1
+                        <option value=2>2
+                        <option value=3>3
+                        <option value=4>4
+                        <option value=5>5
+                    </select>
+                    <br />
+                    <button class="yes" onclick="check()">確定</button>
+                    <button class="close" onclick="close_dialog()">close</button>
+                </dialog>
+                <hr>
+
+                <h1> <span class="w3-right w3-tag w3-dark-grey w3-round">$30</span></h1>
+                <button id="show4" onclick="handleClick(this.id)">火腿</button>
+                <dialog id="infoshow4">
+                    <p>火腿蛋餅份數</p>
+                    <select id="theList size=6">
+                        <option value=1>1
+                        <option value=2>2
+                        <option value=3>3
+                        <option value=4>4
+                        <option value=5>5
+                    </select>
+                    <br />
+                    <button class="yes" onclick="check()">確定</button>
+                    <button class="close" onclick="close_dialog()">close</button>
+                </dialog>
+                <hr>
+
+                <h1> <span class="w3-right w3-tag w3-dark-grey w3-round">$35</span></h1>
+                <button id="show5" onclick="handleClick(this.id)">熱狗</button>
+                <dialog id="infoshow5">
+                    <p>熱狗蛋餅份數/p>
+                        <select id="theList size=6">
+                            <option value=1>1
+                            <option value=2>2
+                            <option value=3>3
+                            <option value=4>4
+                            <option value=5>5
+                        </select>
+                        <br />
+                        <button class="yes" onclick="check()">確定</button>
+                        <button class="close" onclick="close_dialog()">close</button>
+                </dialog>
+                <hr>
+
+                <h1> <span class="w3-right w3-tag w3-dark-grey w3-round">$30</span></h1>
+                <button id="show6" onclick="handleClick(this.id)">蔬菜</button>
+                <dialog id="infoshow6">
+                    <p>蔬菜蛋餅份數</p>
+                    <select id="theList size=6">
+                        <option value=1>1
+                        <option value=2>2
+                        <option value=3>3
+                        <option value=4>4
+                        <option value=5>5
+                    </select>
+                    <br />
+                    <button class="yes" onclick="check()">確定</button>
+                    <button class="close" onclick="close_dialog()">close</button>
+                </dialog>
+                <hr>
+            </div>
+            <!-- 漢堡 -->
+            <div id="漢堡" class="w3-container menu w3-padding-32 w3-white">
+
+                <h1><span class="w3-right w3-tag w3-dark-grey w3-round">$50</span></h1>
+                <button id="show11" onclick="handleClick(this.id)">煎蛋</button>
+                <dialog id="infoshow11">
+                    <p>煎蛋漢堡份數</p>
+                    <select id="theList size=6">
+                        <option value=1>1
+                        <option value=2>2
+                        <option value=3>3
+                        <option value=4>4
+                        <option value=5>5
+                    </select>
+                    <br />
+                    <button class="yes" onclick="check()">確定</button>
+                    <button class="close" onclick="close_dialog()">close</button>
+                </dialog>
+                <hr>
+
+                <h1><span class="w3-right w3-tag w3-dark-grey w3-round">$65</span></h1>
+                <button id="show22" onclick="handleClick(this.id)">火腿蛋</button>
+                <dialog id="infoshow22">
+                    <p>火腿蛋漢堡份數</p>
+                    <select id="theList size=6">
+                        <option value=1>1
+                        <option value=2>2
+                        <option value=3>3
+                        <option value=4>4
+                        <option value=5>5
+                    </select>
+                    <br />
+                    <button class="yes" onclick="check()">確定</button>
+                    <button class="close" onclick="close_dialog()">close</button>
+                </dialog>
+                <hr>
+
+                <h1><span class="w3-right w3-tag w3-dark-grey w3-round">$70</span></h1>
+                <button id="show33" onclick="handleClick(this.id)">豬肉蛋</button>
+                <dialog id="infoshow33">
+                    <p>豬肉蛋漢堡份數</p>
+                    <select id="theList size=6">
+                        <option value=1>1
+                        <option value=2>2
+                        <option value=3>3
+                        <option value=4>4
+                        <option value=5>5
+                    </select>
+                    <br />
+                    <button class="yes" onclick="check()">確定</button>
+                    <button class="close" onclick="close_dialog()">close</button>
+                </dialog>
+                <hr>
+
+                <h1><span class="w3-right w3-tag w3-dark-grey w3-round">$75</span></h1>
+                <button id="show44" onclick="handleClick(this.id)">麥香雞肉蛋</button>
+                <dialog id="infoshow44">
+                    <p>麥香雞肉蛋漢堡份數</p>
+                    <select id="theList size=6">
+                        <option value=1>1
+                        <option value=2>2
+                        <option value=3>3
+                        <option value=4>4
+                        <option value=5>5
+                    </select>
+                    <br />
+                    <button class="yes" onclick="check()">確定</button>
+                    <button class="close" onclick="close_dialog()">close</button>
+                </dialog>
+                <hr>
+
+            </div>
+
+            <!-- 飲料 -->
+            <div id="飲料" class="w3-container menu w3-padding-32 w3-white">
+                <h1><span class="w3-right w3-tag w3-dark-grey w3-round">$15</span></h1>
+                <button id="show12" onclick="handleClick(this.id)">伯爵紅茶</button>
+                <dialog id="infoshow12">
+                    <p>伯爵紅茶份數</p>
+                    <select id="theList size=6">
+                        <option value=1>1
+                        <option value=2>2
+                        <option value=3>3
+                        <option value=4>4
+                        <option value=5>5
+                    </select>
+                    <br />
+                    <button class="yes" onclick="check()">確定</button>
+                    <button class="close" onclick="close_dialog()">close</button>
+                </dialog>
+                <hr>
+                <h1><span class="w3-right w3-tag w3-dark-grey w3-round">$15</span></h1>
+                <button id="show13" onclick="handleClick(this.id)">高山綠茶</button>
+                <dialog id="infoshow13">
+                    <p>高山綠茶份數</p>
+                    <select id="theList size=6">
+                        <option value=1>1
+                        <option value=2>2
+                        <option value=3>3
+                        <option value=4>4
+                        <option value=5>5
+                    </select>
+                    <br />
+                    <button class="yes" onclick="check()">確定</button>
+                    <button class="close" onclick="close_dialog()">close</button>
+                </dialog>
+                <hr>
+                <h1><span class="w3-right w3-tag w3-dark-grey w3-round">$15</span></h1>
+                <button id="show14" onclick="handleClick(this.id)">豆漿</button>
+                <dialog id="infoshow14">
+                    <p>豆漿份數</p>
+                    <select id="theList size=6">
+                        <option value=1>1
+                        <option value=2>2
+                        <option value=3>3
+                        <option value=4>4
+                        <option value=5>5
+                    </select>
+                    <br />
+                    <button class="yes" onclick="check()">確定</button>
+                    <button class="close" onclick="close_dialog()">close</button>
+                </dialog>
+                <hr>
+                <h1><span class="w3-right w3-tag w3-dark-grey w3-round">$20</span></h1>
+                <button id="show15" onclick="handleClick(this.id)">伯爵奶茶</button>
+                <dialog id="infoshow15">
+                    <p>伯爵奶茶份數</p>
+                    <select id="theList size=6">
+                        <option value=1>1
+                        <option value=2>2
+                        <option value=3>3
+                        <option value=4>4
+                        <option value=5>5
+                    </select>
+                    <br />
+                    <button class="yes" onclick="check()">確定</button>
+                    <button class="close" onclick="close_dialog()">close</button>
+                </dialog>
+                <hr>
+            </div><br>
+
+            <script>
+                // Tabbed Menu
+                function openMenu(evt, menuName) {
+                    var i, x, tablinks;
+                    x = document.getElementsByClassName("menu");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    tablinks = document.getElementsByClassName("tablink");
+                    for (i = 0; i < x.length; i++) {
+                        tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+                    }
+                    document.getElementById(menuName).style.display = "block";
+                    evt.currentTarget.firstElementChild.className += " w3-red";
+                }
+                document.getElementById("myLink").click();
+            </script>
+
+        </div>
+
+        <div class="w3-container w3-white w3-padding-64 w3-xxlarge" id="menu">
+            <div class="w3-content">
+                <a href="store.html">回上一頁</a>
+            </div>
+        </div>
+    </div>
+    <script src="./morninghill.js"></script>
+</body>
+
+</html>
